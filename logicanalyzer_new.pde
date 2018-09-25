@@ -94,7 +94,7 @@ PFont myFont;
 
 void setup ()
 {
-   myFont = createFont("Helvetica", 12);
+  myFont = createFont("Helvetica", 12);
   textFont(myFont);
   // get the list of serial ports on the computer
   serial_list = Serial.list()[serial_list_index];
@@ -348,6 +348,7 @@ void mouseClicked() {
       if (serial_port == null) {
       // connect to the selected serial port
       serial_port = new Serial(this, Serial.list()[serial_list_index], 115200);
+      serial_port.clear();
       serial_port.bufferUntil('\n');
       g1 = green;
     }
@@ -391,6 +392,7 @@ void mouseClicked() {
   if (mouseY>buttonY && mouseY <buttonY+buttonH &&
     mouseX>button2X && mouseX <button2X+smallButtonW) {
     cleanGraph();
+    serial_port.clear();
     serial_port.write('G');
     min = false;
     println("new data coming");
