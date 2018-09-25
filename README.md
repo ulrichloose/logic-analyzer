@@ -2,7 +2,7 @@
 
 A few days ago I needed a logic sniffer since I don't have any I thought to write my own code. It will work on every Arduino board or AVR and STM32. It could be very helpful to debug ISP, I2C and other serial communication where you think that could be an error.
 
-![la](https://image.ibb.co/mEAvfU/3.jpg)
+![la](https://raw.githubusercontent.com/ulrichloose/logic-analyzer/patch-1/logicanalyzer_new1.png)
 
 ## Usage
 
